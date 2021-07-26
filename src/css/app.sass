@@ -1,0 +1,28 @@
+// app global css in Sass form
+
+// Allows us to add fonts to classes you choose in the MainLayout or pages
+.text-grand-hotel
+  font-family: 'Grand Hotel', 'Roboto', 'Helvetic Neue', Helvetica Arial, sans-serif
+
+// For smaller screens it shows the footbar
+.small-screen
+  @media (max-width: $breakpoint-xs-max)
+    display: block
+  @media (min-width: $breakpoint-sm-min)
+    display: none
+
+// For larger screens it removes the footbar
+.large-screen
+  @media (max-width: $breakpoint-xs-max)
+    display: none
+  @media (min-width: $breakpoint-sm-min)
+    display: block
+
+// Change the page layout without it, it's too long
+.constrain
+  max-width: 975px
+  margin: 0 auto
+
+.constrain-more
+  max-width: 600px
+  margin: 0 auto
